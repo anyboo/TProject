@@ -1,0 +1,50 @@
+.logoHeader{
+  position: fixed;
+  top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+  height: 300rpx;
+
+}
+.logoTea{
+  height: 900rpx;
+  position: fixed;
+  /* top: 10vh; */
+  top: 46%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+  z-index: 999
+}
+.teaBgLogo{
+  height: 70vh;
+  /* margin: 0 auto; */
+  position: fixed;
+  /* top: 10vh; */
+  top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+
+.getUserInfo{
+  border-radius: 50%;
+  background:#3293FF;
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  bottom: 10vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+  text-align: center;
+}
+
+.icon-right{
+  line-height: 60px;
+  color: #fff;
+  font-size: 26px;
+  position: relative;
+  left: 2px;
+}
