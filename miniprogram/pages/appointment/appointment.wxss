@@ -1,0 +1,26 @@
+/* miniprogram/pages/appointment/appointment.wxss */
+.addressInformation{
+  width: 95%;
+  height: 30px;
+  background:#fff;
+  border-radius: 10px;
+  margin:0 auto;
+  margin-top: 10px;
+  box-shadow: 0px 5px 20px 0px rgba(190, 193, 205, 0.4);
+  padding-top:4px; 
+}
+.icon-pin-{
+  margin-left: 20px;
+  color: #425369;
+}
+.incise{
+  width: 1px;
+  height: 100%;
+  color: #7F8B99;
+  margin: 0 15px;
+  display: inline-block;
+}
+.font-style-address{
+  font-size:16px;
+  color: #808080;
+}

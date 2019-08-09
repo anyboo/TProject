@@ -1,0 +1,23 @@
+/* miniprogram/pages/login/login.wxss */
+.logo{
+  width:300rpx;
+  height:350rpx;
+  margin:0 auto;
+  margin-top:70px;
+}
+.wechatLogin{
+  background:#09BB07;
+  font-size:16px;
+  color: #fff;
+  line-height: 2;
+  width: 170px;
+  margin-top: 15px;
+}
+.phoneLogin{
+  font-size:16px;
+  color: #3293FF;
+  border:1px solid rgba(50,147,255,1);
+  line-height: 2;
+  width: 170px;
+  margin-top: 15px;
+}

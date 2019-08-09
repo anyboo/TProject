@@ -1,0 +1,34 @@
+<!--miniprogram/pages/myInfo/myInfo.wxml-->
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_example ">
+    <view class="weui-cell__hd">
+
+    </view>
+    <view class="weui-cell__bd">头像</view>
+    <view class="weui-cell__ft"><image src="{{imagesLogo}}" style="vertical-align: middle;width:40px; height: 40px;"></image></view>
+  </view>
+  <view class="weui-cell weui-cell_example ">
+    <view class="weui-cell__hd">
+    </view>
+    <view class="weui-cell__bd">用户名</view>
+    <view class="weui-cell__ft">{{name}}</view>
+  </view>
+  <view class="weui-cell weui-cell_example ">
+    <view class="weui-cell__hd">
+    </view>
+    <view class="weui-cell__bd">性别</view>
+    <view class="weui-cell__ft">男</view>
+  </view>
+  <view class="weui-cell weui-cell_example ">
+    <view class="weui-cell__hd">
+    </view>
+    <view class="weui-cell__bd">绑定手机</view>
+    <view class="weui-cell__ft"></view>
+  </view>
+  <view class="weui-cell weui-cell_example ">
+    <view class="weui-cell__hd">
+    </view>
+    <view class="weui-cell__bd">绑定微信</view>
+    <view class="weui-cell__ft">已绑定</view>
+  </view>
+</view>

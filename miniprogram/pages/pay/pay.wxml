@@ -1,0 +1,29 @@
+<!--miniprogram/pages/pay/pay.wxml-->
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+    </view>
+    <view class="weui-cell__bd">订单编号</view>
+    <view class="weui-cell__ft">{{orderNumber}}</view>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+    </view>
+    <view class="weui-cell__bd">订单金额</view>
+    <view class="weui-cell__ft">￥{{price}}</view>
+  </view>
+</view>
+<view class="weui-cells weui-cells_after-title" style="margin-top:20px;">
+  <view class="weui-cell"  bindtap="pay">
+    <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+    </view>
+    <view class="weui-cell__bd"><text class="iconfont icon-weixin" style="margin-right:5px;color:#7ECF41;"></text>微信支付</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+  <view class="weui-cell" bindtap="pay">
+    <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+    </view>
+    <view class="weui-cell__bd"><text class="iconfont icon-qianbao" style="margin-right:5px"></text>钱包支付 <text>余额：0.00</text></view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+</view>

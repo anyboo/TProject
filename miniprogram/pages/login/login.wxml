@@ -1,0 +1,4 @@
+<!--miniprogram/pages/login/login.wxml-->
+<image src="../../images/temaLogo.png" class="logo"></image>
+<button class="wechatLogin" open-type="getUserInfo" bindgetuserinfo="getUserInfo">微信一键登录</button>
+<button class="phoneLogin">手机号码验证登录</button>

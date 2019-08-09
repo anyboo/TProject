@@ -1,0 +1,24 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+      </view>
+      <view class="weui-tab__panel">
+        <view class="weui-tab__content" hidden="{{activeIndex != 0}}" data-type="0">
+          <view class="weui-cells weui-cells_after-title" style="margin-top:10px;">
+            
+          </view>
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}" data-type="1">
+          <view class="weui-cells weui-cells_after-title" style="margin-top:10px;">
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
