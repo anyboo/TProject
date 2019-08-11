@@ -1,5 +1,4 @@
-// miniprogram/pages/pay/pay.js
-const app = getApp();
+// miniprogram/pages/splash2/splash2.js
 Page({
 
   /**
@@ -13,19 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(app.globalData.index)
-    if (app.globalData.index != null){
-      this.setData({
-        price: app.globalData.orderList[app.globalData.index].price,
-        orderNumber: app.globalData.orderList[app.globalData.index].orderNumber
-      })
-    }else{
-      let info = app.globalData.room[app.globalData.roomNum];
-      this.setData({
-        price: info.price,
-        orderNumber: app.globalData.orderNumber
-      })
-    }
+
   },
 
   /**
@@ -76,12 +63,9 @@ Page({
   onShareAppMessage: function () {
 
   },
-  pay:function(){
-    wx.showToast({
-      title: "支付失败，请联系管理员。",
-      duration: 1500,
-      icon:"none",
-      mask: false
-    });
+  toIndex:function(){
+    wx.switchTab({
+      url: '../index/index'
+    })
   }
 })

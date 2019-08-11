@@ -16,7 +16,73 @@ App({
         traceUser: true,
       })
     }
-
-    this.globalData = {}
+    
+    this.globalData = {
+      room:[
+        {
+          roomName:"喜上眉梢",
+          price:"78"
+        },
+        {
+          roomName: "竹报平安",
+          price: "82"
+        },
+        {
+          roomName: "松萝共椅",
+          price: "62"
+        },
+        {
+          roomName: "头头是道",
+          price: "102"
+        },
+      ],
+      userInfo:null,
+      url:null,
+      orderList:[],
+      index:null
+    }
+  },
+  openLoading: function () {
+    wx.showLoading({
+      title: '加载中...',
+    })
+  },
+  closeLoading: function(){
+    wx.hideLoading();
+  },
+  cleadorderNumber:function(){
+    var outTradeNo = "";  //订单号
+    for (var i = 0; i < 6; i++) //6位随机数，用以加在时间戳后面。
+    {
+      outTradeNo += Math.floor(Math.random() * 10);
+    }
+    outTradeNo = new Date().getTime() + outTradeNo;
+    return outTradeNo;
+  },
+  getData: function getNowFormatDate(type) {
+    var date = new Date();
+    var seperator1 = "-";
+    var year = date.getFullYear();
+    var month = date.getMonth() + 1;
+    var strDate = date.getDate();
+    var hh = date.getHours();
+    var mm = date.getMinutes();
+    if (month >= 1 && month <= 9) {
+      month = "0" + month;
+    }
+    if (strDate >= 0 && strDate <= 9) {
+      strDate = "0" + strDate;
+    }
+    if (mm >= 1 && mm <= 9) {
+      mm = "0" + mm;
+    }
+    var currentdate = ""
+    if(type == 1){
+      currentdate = year + "年" + month + "月" + strDate + "日";
+    }
+    if (type == 2) {
+      currentdate = year + "年" + month + "月" + strDate + "日" + hh + ":" + mm
+    }
+    return currentdate;
   }
 })

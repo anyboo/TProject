@@ -1,4 +1,5 @@
 /**app.wxss**/
+@import 'style/weui.wxss';
 .container {
   display: flex;
   flex-direction: column;
@@ -157,12 +158,12 @@ page {
 /*********在线字体代码start*********/
 @font-face {
   font-family: 'iconfont';  /* project id 1336462 */
-  src: url('//at.alicdn.com/t/font_1336462_rprbz7mkpqr.eot');
-  src: url('//at.alicdn.com/t/font_1336462_rprbz7mkpqr.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1336462_rprbz7mkpqr.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_1336462_rprbz7mkpqr.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1336462_rprbz7mkpqr.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1336462_rprbz7mkpqr.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_1336462_9sg1wqtavcl.eot');
+  src: url('//at.alicdn.com/t/font_1336462_9sg1wqtavcl.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1336462_9sg1wqtavcl.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1336462_9sg1wqtavcl.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1336462_9sg1wqtavcl.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1336462_9sg1wqtavcl.svg#iconfont') format('svg');
 }
 /*********在线字体代码end*********/
 /*********字体文件中的代码start*********/
@@ -172,6 +173,14 @@ page {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-qianbao:before {
+  content: "\e61b";
+}
+
+.icon-weixin:before {
+  content: "\e750";
 }
 
 .icon-saoyisaox:before {

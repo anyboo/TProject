@@ -1,5 +1,6 @@
 // miniprogram/pages/orderList/orderList.js
 var sliderWidth = 96; // 需要设置slider的宽度，用于计算中间位置
+const app = getApp();
 Page({
 
   /**
@@ -9,7 +10,8 @@ Page({
     tabs: ["全部", "待付款", "已预约"],
     activeIndex: 0,
     sliderOffset: 0,
-    sliderLeft: 0
+    sliderLeft: 0,
+    orderList:{}
   },
 
   /**
@@ -25,6 +27,9 @@ Page({
         });
       }
     });
+    this.setData({
+      orderList : app.globalData.orderList
+    })
   },
 
   /**
@@ -38,7 +43,10 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.setData({
+      orderList: app.globalData.orderList
+    })
+    app.globalData.index = null;
   },
 
   /**
@@ -81,5 +89,26 @@ Page({
       sliderOffset: e.currentTarget.offsetLeft,
       activeIndex: e.currentTarget.id
     });
+  },
+  toast: function () {
+    wx.showToast({
+      title: "功能暂未开启。",
+      duration: 1500,
+      icon: "none",
+      mask: false
+    });
+  },
+  topay:function(e){
+    app.globalData.index = e.currentTarget.dataset.index;
+    let info = app.globalData.userInfo;
+    if (info == null) {
+      wx.redirectTo({
+        url: '../login/login',
+      })
+    } else {
+      wx.navigateTo({
+        url: '../pay/pay',
+      })
+    }
   }
 })

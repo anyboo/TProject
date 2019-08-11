@@ -13,6 +13,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(app.globalData.orderList);
     let info = app.globalData.room[app.globalData.roomNum];
     this.setData({
       price: info.price,

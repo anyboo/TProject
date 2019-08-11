@@ -86,9 +86,12 @@ Page({
     }
   },
   toLogin: function () {
-    wx.redirectTo({
-      url: '../login/login',
-    })
+    let info = app.globalData.userInfo;
+    if (info == null) {
+      wx.redirectTo({
+        url: '../login/login',
+      })
+    }
   },
   toWallet: function () {
     let info = app.globalData.userInfo;
@@ -101,5 +104,30 @@ Page({
         url: '../wallet/wallet',
       })
     }
+  },
+  toCard:function(){
+    let info = app.globalData.userInfo;
+    if (info == null) {
+      wx.redirectTo({
+        url: '../login/login',
+      })
+    } else {
+      wx.navigateTo({
+        url: '../card/card',
+      })
+    }
+  },
+  tel: function () {
+    wx.makePhoneCall({
+      phoneNumber: '13500236142',
+    })
+  },
+  toast: function () {
+    wx.showToast({
+      title: "功能暂未开启。",
+      duration: 1500,
+      icon: "none",
+      mask: false
+    });
   }
 })

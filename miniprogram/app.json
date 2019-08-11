@@ -1,7 +1,23 @@
 {
   "pages": [
     "pages/splash/splash",
-    "pages/index/index"
+    "pages/orderList/orderList",
+    "pages/index/index",
+    
+    "pages/splash2/splash2",
+    
+    "pages/card/card",
+    "pages/wallet/wallet",
+    "pages/login/login",
+    
+    "pages/my/my",
+    
+    "pages/myInfo/myInfo",
+    "pages/orderForm/orderForm",
+    "pages/pay/pay",
+    "pages/appointment/appointment",
+    "pages/detail/detail"
+   
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -9,6 +25,22 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/orderList/orderList",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

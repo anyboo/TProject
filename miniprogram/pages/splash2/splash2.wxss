@@ -1,0 +1,13 @@
+/* miniprogram/pages/splash2/splash2.wxss */
+.fontBox{
+width:90%;
+height:70px;
+background:#fff;
+text-align:center;
+line-height:70px;
+color:#949191;
+font-size:32px;
+fong-weight:blod;
+margin:0 auto;
+margin-bottom:10px;
+}

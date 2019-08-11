@@ -74,7 +74,14 @@ Page({
 
   },
   toOrderForm:function(){
+    let array = {};
+    let info = app.globalData.room[app.globalData.roomNum];
     app.globalData.orderNumber = app.cleadorderNumber();
+    array.name = info.roomName;
+    array.orderNumber = app.globalData.orderNumber;
+    array.creadTime = app.getData(2);
+    array.price = info.price;
+    app.globalData.orderList.push(array);
     wx.navigateTo({
       url: '../orderForm/orderForm',
     })

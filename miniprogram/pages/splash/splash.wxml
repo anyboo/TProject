@@ -1,6 +1,6 @@
 <image src="../../images/headLogo.png" class="logoHeader"></image>
 <image src="../../images/logoTea.png" class="logoTea"></image>
 <image src="../../images/teaBgLogo.png" class="teaBgLogo"></image>
-<button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="getUserInfo">
+<button  bindtap="gotoBtnView" class="getUserInfo">
     <text class="iconfont icon-arrow-right- icon-right"></text>
 </button>

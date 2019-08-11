@@ -1,4 +1,5 @@
 // miniprogram/pages/index/index.js
+const app = getApp()
 Page({
 
   /**
@@ -62,5 +63,23 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  toappointmentTime: function(){
+    wx.navigateTo({
+      url: '../appointment/appointment'
+    })
+  },
+  tel: function () {
+    wx.makePhoneCall({
+      phoneNumber: '13500236142',
+    })
+  },
+  toast: function () {
+    wx.showToast({
+      title: "功能暂未开启。",
+      duration: 1500,
+      icon: "none",
+      mask: false
+    });
   }
 })

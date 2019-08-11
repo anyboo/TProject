@@ -1,0 +1,5 @@
+<!--miniprogram/pages/card/card.wxml-->
+<image src="../../images/quan.png" style="width:600rpx;height:290rpx;margin:0 auto"></image>
+<image src="../../images/quan-2.jpg" style="width:600rpx;height:200rpx;margin:15px auto"></image>
+<image src="../../images/quan-2.jpg" style="width:600rpx;height:200rpx;margin:0 auto"></image>
+

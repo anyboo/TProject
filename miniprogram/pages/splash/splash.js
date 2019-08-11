@@ -8,7 +8,11 @@ Page({
   data: {
 
   },
-
+  gotoBtnView: function () {
+    wx.navigateTo({
+      url: '../splash2/splash2'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -87,5 +91,6 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+    this.gotoBtnView()
   }
 })
