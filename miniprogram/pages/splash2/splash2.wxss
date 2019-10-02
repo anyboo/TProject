@@ -7,7 +7,7 @@ text-align:center;
 line-height:70px;
 color:#949191;
 font-size:32px;
-fong-weight:blod;
+font-weight:blod;
 margin:0 auto;
 margin-bottom:10px;
 }

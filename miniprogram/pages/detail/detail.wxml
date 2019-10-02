@@ -4,16 +4,13 @@
   <!--轮播图-->
   <swiper class="home-swiper" indicator-dots="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
     <swiper-item>
-      <image src="https://team.applinzi.com/images/tearoom-4.jpg" class="slide-image" />
+      <image src="https://www.teamcs.cn/images/appointment-2.png" class="slide-image" />
     </swiper-item>
     <swiper-item>
-      <image src="https://team.applinzi.com/images/tearoom-1.png" class="slide-image" />
+      <image src="https://www.teamcs.cn/images/appointment-3.png" class="slide-image" />
     </swiper-item>
     <swiper-item>
-      <image src="https://team.applinzi.com/images/tearoom-2.png" class="slide-image" />
-    </swiper-item>
-    <swiper-item>
-      <image src="https://team.applinzi.com/images/tearoom-3.png" class="slide-image" />
+      <image src="https://www.teamcs.cn/images/appointment-4.png" class="slide-image" />
     </swiper-item>
   </swiper>
   <text style="margin-top:15px;">{{name}}</text>
@@ -45,12 +42,12 @@
   <text class="titleBox">可免费提供投影设备</text>
   </text>
   <view style="padding:3%;font-size:14px;color:#343434;font-weight:400">
-    <view>1、本茶室禁止黄赌毒行为</view>
-    <view>2、Wifi账户： 8888 密码8888 </view>
-    <view>3、茶室配有自助售货机，茶叶及茶点可至售货机购买。</view>
-    <view>4、茶室全程自助，每套茶具都经过消毒，请放心使用。</view>
-    <view>5、本茶室配套茶具及摆件均可免费使用，如有损坏，按 市场价赔偿。
-    </view>
+    <view>1、禁止在茶室从事黄、赌、毒等违法行为。</view>
+    <view>2、Wifi账户:TeamoShare 密码:teamo2832</view>
+    <view>3、茶室大厅提供自助茶叶，欢迎选购。</view>
+    <view>4、茶室茶具多为易碎品，请爱护它哟。</view>
+    <view>5、如有喜欢的小玩意儿，不要偷偷带走它，可联系我们。</view>
+    <view>6、题墨为全程自助式，这一刻它是你的。</view>
   </view>
   <view style="background:#fff;border:1px solid rgba(84,99,119,1);box-shadow:0px 3px 14px 0px rgba(0, 0, 0, 0.13);width:80%;border-radius:15px;position:relative;overflow:hidden;margin-bottom:20px;">
     <text style="margin-left:10px">￥{{price}}元</text>

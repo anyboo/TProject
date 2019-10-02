@@ -1,8 +1,8 @@
 <!--miniprogram/pages/splash2/splash2.wxml-->
-<view class="fontBox">商务洽谈</view>
-<view class="fontBox">朋友聚会</view>
-<view class="fontBox">团队建设</view>
-<view class="fontBox">情侣休闲</view>
+<view class="fontBox" style="background-image:url(https://www.teamcs.cn/images/splash-1.png);background-size:100% 100%">商务洽谈</view>
+<view class="fontBox" style="background-image:url(https://www.teamcs.cn/images/splash-2.png);background-size:100% 100%">朋友聚会</view>
+<view class="fontBox" style="background-image:url(https://www.teamcs.cn/images/splash-3.png);background-size:100% 100%">团队建设</view>
+<view class="fontBox" style="background-image:url(https://www.teamcs.cn/images/splash-4.png);background-size:100% 100%">情侣休闲</view>
 <view style="width:90%;height:105px;background:#fff;text-align:center;margin:0 auto">
   <text style="display:inline-block;width:100%;margin:10px auto;color:#3293FF">浏览 —— 下单 —— 享受</text>
   <text style="display:inline-block;margin:0 10px;color:#949191;font-size:14px">获得饮茶服务从来不是那么容易。用简单的步骤即可获得享受</text>

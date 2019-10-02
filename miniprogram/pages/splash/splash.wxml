@@ -1,6 +1,4 @@
-<image src="../../images/headLogo.png" class="logoHeader"></image>
-<image src="../../images/logoTea.png" class="logoTea"></image>
-<image src="../../images/teaBgLogo.png" class="teaBgLogo"></image>
-<button  bindtap="gotoBtnView" class="getUserInfo">
+<image src="https://www.teamcs.cn/images/Artboard Background@2x.png" class="logoHeader"></image>
+<button open-type="getUserInfo" bindtap="gotoBtnView" class="getUserInfo">
     <text class="iconfont icon-arrow-right- icon-right"></text>
 </button>

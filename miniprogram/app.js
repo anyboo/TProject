@@ -20,26 +20,26 @@ App({
     this.globalData = {
       room:[
         {
-          roomName:"喜上眉梢",
-          price:"78"
+          roomName:"凝聚力",
+          price:"108"
         },
         {
-          roomName: "竹报平安",
-          price: "82"
+          roomName: "使命感",
+          price: "108"
         },
         {
-          roomName: "松萝共椅",
-          price: "62"
+          roomName: "价值观",
+          price: "108"
         },
         {
-          roomName: "头头是道",
-          price: "102"
+          roomName: "责任心",
+          price: "108"
         },
       ],
       userInfo:null,
       url:null,
-      orderList:[],
-      index:null
+      orderList: [],
+      index: null
     }
   },
   openLoading: function () {

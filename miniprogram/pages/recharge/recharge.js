@@ -1,4 +1,4 @@
-// miniprogram/pages/wallet/wallet.js
+// miniprogram/pages/recharge/recharge.js
 Page({
 
   /**
@@ -63,15 +63,9 @@ Page({
   onShareAppMessage: function () {
 
   },
-  pay:function(){
-    // wx.showToast({
-    //   title: "充值渠道暂未开启，请联系管理员。",
-    //   duration: 1500,
-    //   icon: "none",
-    //   mask: false
-    // });
-    wx.navigateTo({
-      url: '../recharge/recharge',
-    })
+  toPay: function () {
+      wx.navigateTo({
+        url: '../buy/buy',
+      })
   }
 })

@@ -6,14 +6,14 @@
     <view class="incise">|</view>
     <text class="font-style-address"> 中央第五街</text>
   </view>
-  <image src="https://team.applinzi.com/images/bg-2.jpg" style="width:100%;height:350rpx;margin:10px 0"></image>
+  <image src="https://www.teamcs.cn/images/bg-2.png" style="width:100%;height:350rpx;margin:10px 0"></image>
   <view class="weui-cell"  bindtap="todetail"  data-room="0">
     <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
-      <image src="https://team.applinzi.com/images/tearoom-1.png" style="width: 50px; height: 50px; display: block" />
+      <image src="https://www.teamcs.cn/images/tearoom-1.png" style="width: 50px; height: 50px; display: block" />
       <!-- <view class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">8</view> -->
     </view>
     <view class="weui-cell__bd">
-      <view>喜上眉梢</view>
+      <view>凝聚力</view>
       <view style="font-size: 13px;color: #343434;">
         服务
         <image src="../../images/pingfen.png" style="width:12px;height:12px"></image>
@@ -29,18 +29,18 @@
         <image src="../../images/pingfen.png" style="width:12px;height:12px"></image>
       </view>
       <view style="font-size: 13px;color: #343434">
-        ￥78.00/小时
-        <text style="margin-left:40px;">推荐6-12人</text>
+        ￥108.00/小时
+        <text style="margin-left:40px;">推荐1-4人</text>
       </view>
     </view>
   </view>
   <view class="weui-cell" bindtap="todetail" data-room="1">
     <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
-      <image src="https://team.applinzi.com/images/tearoom-2.png" style="width: 50px; height: 50px; display: block" />
+      <image src="https://www.teamcs.cn/images/tearoom-2.png" style="width: 50px; height: 50px; display: block" />
       <!-- <view class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">8</view> -->
     </view>
     <view class="weui-cell__bd">
-      <view>竹报平安</view>
+      <view>使命感</view>
       <view style="font-size: 13px;color: #343434;">
         服务
         <image src="../../images/pingfen.png" style="width:12px;height:12px"></image>
@@ -56,18 +56,18 @@
         <image src="../../images/pingfen.png" style="width:12px;height:12px"></image>
       </view>
       <view style="font-size: 13px;color: #343434">
-        ￥82.00/小时
-        <text style="margin-left:40px;">推荐6-12人</text>
+        ￥108.00/小时
+        <text style="margin-left:40px;">推荐1-6人</text>
       </view>
     </view>
   </view>
   <view class="weui-cell"  bindtap="todetail"  data-room="2">
     <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
-      <image src="https://team.applinzi.com/images/tearoom-3.png" style="width: 50px; height: 50px; display: block" />
+      <image src="https://www.teamcs.cn/images/tearoom-3.png" style="width: 50px; height: 50px; display: block" />
       <!-- <view class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">8</view> -->
     </view>
     <view class="weui-cell__bd">
-      <view>松萝共倚</view>
+      <view>价值观</view>
       <view style="font-size: 13px;color: #343434;">
         服务
         <image src="../../images/pingfen.png" style="width:12px;height:12px"></image>
@@ -83,18 +83,18 @@
         <image src="../../images/pingfen.png" style="width:12px;height:12px"></image>
       </view>
       <view style="font-size: 13px;color: #343434">
-        ￥62.00/小时
-        <text style="margin-left:40px;">推荐6-12人</text>
+        ￥108.00/小时
+        <text style="margin-left:40px;">推荐1-6人</text>
       </view>
     </view>
   </view>
   <view class="weui-cell"  bindtap="todetail" data-room="3">
     <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
-      <image src="https://team.applinzi.com/images/tearoom-4.jpg" style="width: 50px; height: 50px; display: block" />
+      <image src="https://www.teamcs.cn/images/tearoom-4.png" style="width: 50px; height: 50px; display: block" />
       <!-- <view class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">8</view> -->
     </view>
     <view class="weui-cell__bd">
-      <view>头头是道</view>
+      <view>责任心</view>
       <view style="font-size: 13px;color: #343434;">
         服务
         <image src="../../images/pingfen.png" style="width:12px;height:12px"></image>
@@ -110,8 +110,8 @@
         <image src="../../images/pingfen.png" style="width:12px;height:12px"></image>
       </view>
       <view style="font-size: 13px;color: #343434">
-        ￥102.00/小时
-        <text style="margin-left:40px;">推荐6-12人</text>
+        ￥108.00/小时
+        <text style="margin-left:40px;">推荐1-6人</text>
       </view>
     </view>
   </view>
