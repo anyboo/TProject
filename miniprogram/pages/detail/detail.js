@@ -93,9 +93,14 @@ Page({
     var end = Date.parse(app.globalData.startTime) + 3600 * 1000
     var endTimeUTC = new Date(end)
     console.log(endTimeUTC.toJSON(), endTimeUTC.getUTCHours(), endTimeUTC.getUTCMinutes());
+
+    var strHours = endTimeUTC.getUTCHours().toString()
+    var strMins = endTimeUTC.getUTCMinutes().toString()
+    var strEnd = strHours.padStart(2, "0") + ':' + strMins.padStart(2, "0")
+    
     this.setData({
       startTime: e.detail.value,
-      endTime: endTimeUTC.getUTCHours().toString().padStart(2, '0') + ':' + endTimeUTC.getUTCMinutes().toString().padStart(2, '0')
+      endTime: strEnd
     })
   },
   bindTimeChangeE: function (e) {
@@ -115,9 +120,12 @@ Page({
 
     var endTimeUTC = new Date(end)
     console.log(endTimeUTC.toJSON(), iDura, count)
-    
+    var strHours = endTimeUTC.getUTCHours().toString()
+    var strMins = endTimeUTC.getUTCMinutes().toString()
+    var strEnd = strHours.padStart(2, "0") + ':' + strMins.padStart(2,"0")
+
     this.setData({
-      endTime: endTimeUTC.getUTCHours().toString().padStart(2, '0') + ':' + endTimeUTC.getUTCMinutes().toString().padStart(2,'0')
+      endTime: strEnd
     })
   }
   
