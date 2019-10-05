@@ -77,6 +77,9 @@ App({
       mm = "0" + mm;
     }
     var currentdate = ""
+    if (type == 0) {
+      currentdate = year + "-" + month + "-" + strDate + " ";
+    }
     if(type == 1){
       currentdate = year + "年" + month + "月" + strDate + "日";
     }

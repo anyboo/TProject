@@ -88,16 +88,36 @@ Page({
   },
   bindTimeChangeS: function (e) {
     console.log(e.detail.value)
-    app.globalData.startTime = app.getData(1) + e.detail.value
+    app.globalData.startTime = app.getData(0) + e.detail.value +' UTC'
+    console.log(app.globalData.startTime)
+    var end = Date.parse(app.globalData.startTime) + 3600 * 1000
+    var endTimeUTC = new Date(end)
+    console.log(endTimeUTC.toJSON(), endTimeUTC.getUTCHours(), endTimeUTC.getUTCMinutes());
     this.setData({
-      startTime: e.detail.value
+      startTime: e.detail.value,
+      endTime: endTimeUTC.getUTCHours().toString().padStart(2, '0') + ':' + endTimeUTC.getUTCMinutes().toString().padStart(2, '0')
     })
   },
   bindTimeChangeE: function (e) {
     console.log(e.detail.value)
-    app.globalData.endTime = app.getData(1) +  e.detail.value
+    app.globalData.endTime = app.getData(0) +  e.detail.value + ' UTC'
+    console.log(app.globalData.endTime)
+    var start = Date.parse(app.globalData.startTime)
+    var end = Date.parse(app.globalData.endTime)
+    
+    if(end < start){
+      end += 3600 * 1000 * 24
+    }
+    console.log(start, end)
+    var iDura =  (end - start) / 3600 / 1000;
+    var count = Math.ceil(iDura)
+    end = start + count * 3600 * 1000
+
+    var endTimeUTC = new Date(end)
+    console.log(endTimeUTC.toJSON(), iDura, count)
+    
     this.setData({
-      endTime: e.detail.value
+      endTime: endTimeUTC.getUTCHours().toString().padStart(2, '0') + ':' + endTimeUTC.getUTCMinutes().toString().padStart(2,'0')
     })
   }
   

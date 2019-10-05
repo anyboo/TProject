@@ -13,7 +13,7 @@ Page({
       hasList: true,
       carts: [
         { id: 1, title: '108卡券', image: '/image/s5.png', num: 1, price: 108, selected: true },
-        { id: 2, title: '188卡券', image: '/image/s6.png', num: 1, price: 188, selected: true }
+        { id: 2, title: '68卡券', image: '/image/s6.png', num: 1, price: 68, selected: true }
       ]
     });
     this.getTotalPrice();

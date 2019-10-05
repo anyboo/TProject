@@ -9,9 +9,12 @@ Page({
 
   },
   gotoBtnView: function () {
-    wx.navigateTo({
-      url: '../splash2/splash2'
+    wx.switchTab({
+      url: '../index/index'
     })
+    // wx.navigateTo({
+    //   url: '../splash2/splash2'
+    // })
   },
   /**
    * 生命周期函数--监听页面加载
