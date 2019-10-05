@@ -20,21 +20,25 @@ App({
     this.globalData = {
       room:[
         {
-          roomName:"凝聚力",
-          price:"108"
-        },
-        {
           roomName: "使命感",
-          price: "108"
+          price: "108",
+          number:1
         },
         {
           roomName: "价值观",
-          price: "108"
+          price: "108",
+          number:2
         },
         {
           roomName: "责任心",
-          price: "108"
+          price: "108",
+          number:3
         },
+        {
+          roomName: "凝聚力",
+          price: "108",
+          number: 4
+        }
       ],
       userInfo:null,
       url:null,

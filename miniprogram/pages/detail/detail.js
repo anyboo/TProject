@@ -24,7 +24,8 @@ Page({
     this.setData({
       price: info.price,
       name: info.roomName,
-
+      number: info.number,
+      imageSrc: `https://www.teamcs.cn/images/detail-${info.number}.png`
     })
   },
 
@@ -89,7 +90,15 @@ Page({
       url: '../orderForm/orderForm',
     })
   },
-
+  discount: function(st,duration){
+    //23:00 - 10:00 [23-[0-9]
+    //12:00 - 14:00 [12-14]
+    //17:00 - 19:00 [17-19]
+    if(23 == st) return true;
+    if(0 <= st && st < 10) return true;
+    if(17<= st && st < 19) return true;
+    return false;
+  },
   formatTime: function(ts){
     let _UTCTime = new Date(ts)
     let hours = _UTCTime.getUTCHours().toString()
@@ -103,10 +112,11 @@ Page({
     app.globalData.startTime = app.getData(0) + this.data.array[e.detail.value] + ':00 UTC'
     let startTimeUTC = new Date(app.globalData.startTime)
     let end = startTimeUTC.getTime() + 3600 * 1000
-
+    let info = app.globalData.room[app.globalData.roomNum];
     this.setData({
       startTime: this.data.array[e.detail.value],
-      endTime: this.formatTime(end)
+      endTime: this.formatTime(end),
+      price: this.discount(e.detail.value) ? 68 :info.price
     })
   },
   bindIndexChangeE: function(e){
@@ -123,8 +133,10 @@ Page({
     let count = Math.ceil(iDura)
     end = start + count * 3600 * 1000
 
+    let info = app.globalData.room[app.globalData.roomNum];
     this.setData({
-      endTime: this.formatTime(end)
+      endTime: this.formatTime(end),
+      price: this.discount(e.detail.value) ? 68*count : info.price*count
     })
   },
   bindTimeChangeS: function (e) {

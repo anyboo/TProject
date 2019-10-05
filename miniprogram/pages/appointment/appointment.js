@@ -6,7 +6,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    autoplay: true,
+    interval: 3000,
+    duration: 1200,
   },
 
   /**
