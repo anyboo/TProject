@@ -19,10 +19,12 @@
   <text style="color:#425369;"><text class="timeBox">{{startTime}}</text>至<text class="timeBox">{{endTime}}</text>
   </text>
   <view>
-    <picker mode="time" value="{{time}}" start="00:01" end="23:59" bindchange="bindTimeChangeS" style="display:inline-block;">
+    <!-- <picker mode="time" value="{{time}}" start="00:01" end="23:59" bindchange="bindTimeChangeS" style="display:inline-block;"> -->
+    <picker value="{{index}}" range="{{array}}" bindchange="bindIndexChangeS" style="display:inline-block;">
       <button class="weui-btn" type="default" class="choseBtn">开始时间</button>
     </picker>
-    <picker mode="time" value="{{time}}" start="00:01" end="23:59" bindchange="bindTimeChangeE" style="display:inline-block;">
+    <!-- <picker mode="time" value="{{time}}" start="00:01" end="23:59" bindchange="bindTimeChangeE" style="display:inline-block;"> -->
+    <picker value="{{index}}" range="{{array}}" bindchange="bindIndexChangeE" style="display:inline-block;">
       <button class="weui-btn" type="default" class="choseBtn">结束时间</button>
     </picker>
   </view>
@@ -36,10 +38,10 @@
   <view class="line-qiege"></view>
   <text style="margin:15px;">使用说明</text>
   <text style="text-align:center">
-    <text class="titleBox">可容纳6-12人</text>
+  <text class="titleBox">可容纳1-6人</text>
   <text class="titleBox">适合小型会议</text>
-  <text class="titleBox">提前预约工作人员</text>
-  <text class="titleBox">可免费提供投影设备</text>
+  <text class="titleBox">闲时时段\n23:00-10:00 12:00-14:00\n17:00-19:00</text>
+  <text class="titleBox">忙时时段\n10:00-12:00 14:00-17:00\n19:00-23:00</text>
   </text>
   <view style="padding:3%;font-size:14px;color:#343434;font-weight:400">
     <view>1、禁止在茶室从事黄、赌、毒等违法行为。</view>
