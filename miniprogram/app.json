@@ -13,6 +13,7 @@
     "pages/orderList/orderList",
     "pages/myInfo/myInfo",
     "pages/orderForm/orderForm",
+    "pages/orderFormCard/orderFormCard",
     "pages/pay/pay",
     "pages/appointment/appointment",
     "pages/detail/detail"

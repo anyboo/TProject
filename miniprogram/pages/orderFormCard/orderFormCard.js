@@ -6,18 +6,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    a_name:"",
+    b_name:"",
+    a_count : 0,
+    b_count : 0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(app.globalData.orderList);
-    let last = app.globalData.index;
-    let info = app.globalData.room[app.globalData.roomNum];
+    console.log(app.globalData.orderCardList);
+    let last = app.globalData.indexCard;
+    let info = app.globalData.orderCardList[last];
     this.setData({
-      price: app.globalData.orderList[last].price,
+      price: info.car,
       name: app.globalData.orderList[last].name,
       duration: app.globalData.orderList[last].duration,
       orderNumber: app.globalData.orderList[last].orderNumber,
@@ -77,7 +80,7 @@ Page({
     //下单处理
     let info = app.globalData.userInfo;
     if (info == null) {
-      app.globalData.url = "../orderForm/orderForm"
+      app.globalData.url = "../orderFormCard/orderFormCard"
       wx.redirectTo({
         url: '../login/login',
       })

@@ -43,7 +43,9 @@ App({
       userInfo:null,
       url:null,
       orderList: [],
-      index: null
+      orderCardList:[],
+      index: null,
+      indexCard: null
     }
   },
   openLoading: function () {

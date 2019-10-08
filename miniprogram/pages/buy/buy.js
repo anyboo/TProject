@@ -12,8 +12,8 @@ Page({
     this.setData({
       hasList: true,
       carts: [
-        { id: 1, title: '108卡券', image: '/image/s5.png', num: 0, price: 108, selected: true },
-        { id: 2, title: '68卡券', image: '/image/s6.png', num: 0, price: 68, selected: true }
+        { id: 1, title: '108卡券', image: '/images/s5.png', num: 0, price: 108, selected: true },
+        { id: 2, title: '68卡券', image: '/images/s6.png', num: 0, price: 68, selected: true }
       ]
     });
     this.getTotalPrice();
@@ -119,6 +119,16 @@ Page({
       totalPrice: total.toFixed(2)
     });
   },
+
+  toOrderForm: function () {
+    // let array = {};
+    // array. = this.data.carts 
+    // app.globalData.orderCardList.push(array);
+    // app.globalData.indexCard = app.globalData.orderCardList.length - 1;
+    // wx.navigateTo({
+    //   url: '../orderFormCard/orderFormCard',
+    // })
+  },
   toPay: function () {
     wx.showToast({
       title: "充值系统尚未开通。",
@@ -127,5 +137,4 @@ Page({
       mask: false
     });
   }
-
 })
