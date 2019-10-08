@@ -14,7 +14,7 @@
     <view class="weui-cell__bd">
       <view style="font-size: 13px;color: #808080;">订单：{{orderNumber}}</view>
       <view>{{name}}</view>
-      <view style="font-size: 13px;color: #546377">服务时间： {{startTime}}-{{endTime}}</view>
+      <view style="font-size: 13px;color: #546377">服务时间： {{duration}} 小时</view>
     </view>
     <view class="weui-cell__ft" style="height:100%;">
       <view style="font-size: 13px;color: #546377;positon:absolute:top:0">{{creatData}}</view>

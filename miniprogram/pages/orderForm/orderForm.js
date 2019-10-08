@@ -14,14 +14,14 @@ Page({
    */
   onLoad: function (options) {
     console.log(app.globalData.orderList);
+    let last = app.globalData.index;
     let info = app.globalData.room[app.globalData.roomNum];
     this.setData({
-      price: info.price,
-      name: info.roomName,
-      startTime: app.globalData.startTime,
-      endTime: app.globalData.endTime,
-      orderNumber: app.globalData.orderNumber,
-      creatData: app.getData(2)
+      price: app.globalData.orderList[last].price,
+      name: app.globalData.orderList[last].name,
+      duration: app.globalData.orderList[last].duration,
+      orderNumber: app.globalData.orderList[last].orderNumber,
+      creatData: app.globalData.orderList[last].creadTime
     })
   },
 

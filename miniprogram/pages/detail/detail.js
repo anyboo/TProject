@@ -13,6 +13,8 @@ Page({
     endTime: '-- --',
     array: ['00:00', '01:00','02:00','03:00','04:00','05:00','06:00','07:00','08:00','09:00','10:00','11:00','12:00',
     '13:00','14:00','15:00','16:00','17:00','18:00','19:00','20:00','21:00','22:00','23:00'],
+    price:0,
+    totalDuration:0,
     index:0
   },
 
@@ -84,8 +86,10 @@ Page({
     array.name = info.roomName;
     array.orderNumber = app.globalData.orderNumber;
     array.creadTime = app.getData(2);
-    array.price = info.price;
+    array.price = this.data.price;
+    array.duration = this.data.totalDuration;
     app.globalData.orderList.push(array);
+    app.globalData.index = app.globalData.orderList.length - 1;
     wx.navigateTo({
       url: '../orderForm/orderForm',
     })
@@ -112,11 +116,13 @@ Page({
     app.globalData.startTime = app.getData(0) + this.data.array[e.detail.value] + ':00 UTC'
     let startTimeUTC = new Date(app.globalData.startTime)
     let end = startTimeUTC.getTime() + 3600 * 1000
+    this.data.price = this.discount(e.detail.value) ? 68 : info.price;
+    this.data.totalDuration = 1;
     let info = app.globalData.room[app.globalData.roomNum];
     this.setData({
       startTime: this.data.array[e.detail.value],
       endTime: this.formatTime(end),
-      price: this.discount(e.detail.value) ? 68 :info.price
+      price: this.data.price
     })
   },
   bindIndexChangeE: function(e){
@@ -132,11 +138,12 @@ Page({
     let iDura = (end - start) / 3600 / 1000
     let count = Math.ceil(iDura)
     end = start + count * 3600 * 1000
-
+    this.data.price = this.discount(e.detail.value) ? 68 * count : info.price * count;
+    this.data.totalDuration = count;
     let info = app.globalData.room[app.globalData.roomNum];
     this.setData({
       endTime: this.formatTime(end),
-      price: this.discount(e.detail.value) ? 68*count : info.price*count
+      price: this.data.price
     })
   },
   bindTimeChangeS: function (e) {
