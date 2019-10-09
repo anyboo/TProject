@@ -116,9 +116,9 @@ Page({
     app.globalData.startTime = app.getData(0) + this.data.array[e.detail.value] + ':00 UTC'
     let startTimeUTC = new Date(app.globalData.startTime)
     let end = startTimeUTC.getTime() + 3600 * 1000
-    this.data.price = this.discount(e.detail.value) ? 68 : info.price;
     this.data.totalDuration = 1;
     let info = app.globalData.room[app.globalData.roomNum];
+    this.data.price = this.discount(e.detail.value) ? 68 : info.price;
     this.setData({
       startTime: this.data.array[e.detail.value],
       endTime: this.formatTime(end),
@@ -138,9 +138,9 @@ Page({
     let iDura = (end - start) / 3600 / 1000
     let count = Math.ceil(iDura)
     end = start + count * 3600 * 1000
-    this.data.price = this.discount(e.detail.value) ? 68 * count : info.price * count;
     this.data.totalDuration = count;
     let info = app.globalData.room[app.globalData.roomNum];
+    this.data.price = this.discount(e.detail.value) ? 68 * count : info.price * count;
     this.setData({
       endTime: this.formatTime(end),
       price: this.data.price
