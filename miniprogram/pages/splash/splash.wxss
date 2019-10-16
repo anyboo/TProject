@@ -4,7 +4,7 @@
 	left: 50%;
 	transform: translate(-50%, 0);
 	-webkit-transform: translate(-50%, 0);
-  height: 220rpx;
+  height: 150rpx;
 
 }
 .logoTea{
@@ -30,7 +30,7 @@
 
 .getUserInfo{
   border-radius: 50%;
-  background:#3293FF;
+  background:#898585;
   height: 60px;
   width: 60px;
   position: fixed;

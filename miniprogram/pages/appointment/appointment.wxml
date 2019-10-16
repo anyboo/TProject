@@ -1,11 +1,11 @@
 <!--miniprogram/pages/appointment/appointment.wxml-->
 <view style="padding:2%">
   <text style="font-size:23px;font-weight:font-weight:bold;color:rgba(52,52,52,1);">中央第五街</text>
-  <view class="addressInformation">
+  <!-- <view class="addressInformation">
     <text class="iconfont icon-pin-"></text>
     <view class="incise">|</view>
     <text class="font-style-address"> 中央第五街</text>
-  </view>
+  </view> -->
    <swiper class="home-swiper" indicator-dots="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
     <swiper-item>
       <image src="https://www.teamcs.cn/images/appointment-2.png" class="slide-image" />
