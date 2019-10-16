@@ -71,7 +71,7 @@ Page({
     //   mask: false
     // });
     wx.navigateTo({
-      url: '../recharge/recharge',
+      url: '',
     })
   }
 })
