@@ -1,6 +1,17 @@
 <view>
-  <image src="https://www.teamcs.cn/images/index-1.png" class="headGg"></image>
-</view>
+<swiper class="home-swiper" indicator-dots="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <swiper-item>
+      <image class="slide-image" src="https://www.teamcs.cn/images/index.png"/>
+    </swiper-item>
+    <swiper-item>
+      <image class="slide-image"  src="https://www.teamcs.cn/images/IMG_0499.JPG"/>
+    </swiper-item>
+  </swiper>
+  </view>
+<!-- <view>
+  <image src="https://www.teamcs.cn/images/index-1.png" class="headGg">
+  </image>
+</view> -->
 <view class="line"></view>
 <view class="addressInformation">
   <text class="iconfont icon-search-1"></text>
@@ -30,11 +41,11 @@
     <image src="../../images/icon-2.png" class="iconRight"></image>
   </view>
 </view>
-<view style="width:90px;height:30px;border-radius:15px;background:#fff;font-weight:bold;position:fixed;right:5px;bottom:110px;font-weight:bold;text-align:right;padding-right:15px;line-height:30px;font-size:16px;" bindtap="toast">
+<view style="width:90px;height:30px;border-radius:15px;background:#fff;font-weight:bold;position:fixed;right:5px;bottom:70px;font-weight:bold;text-align:right;padding-right:15px;line-height:30px;font-size:16px;" bindtap="toast">
   <view style="width:40px;height:40px;border-radius:50%;background:#F7B941;position:absolute;left:-5px;top:-5px;text-align:center;line-height:40px;"><text class="iconfont icon-sticker-2" style="margin:0 auto;font-size:22px;color:#fff;"></text></view>
   续单
 </view>
-<view style="width:90px;height:30px;border-radius:15px;background:#fff;font-weight:bold;position:fixed;right:5px;bottom:60px;font-weight:bold;text-align:right;padding-right:15px;line-height:30px"  bindtap="toast">
+<view style="width:90px;height:30px;border-radius:15px;background:#fff;font-weight:bold;position:fixed;right:5px;bottom:20px;font-weight:bold;text-align:right;padding-right:15px;line-height:30px"  bindtap="toast">
   <view style="width:40px;height:40px;border-radius:50%;background:#71ABF5;position:absolute;left:-5px;top:-5px;text-align:center;line-height:40px;"><text class="iconfont icon-sticker-2" style="margin:0 auto;font-size:22px;color:#fff;"></text></view>
   开门码
 </view>
