@@ -1,7 +1,7 @@
 /* miniprogram/pages/login/login.wxss */
 .logo{
-  width:300rpx;
-  height:350rpx;
+  width:290rpx;
+  height:295rpx;
   margin:0 auto;
   margin-top:70px;
 }
