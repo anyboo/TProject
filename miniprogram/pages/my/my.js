@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imagesLogo: '../../images/logo.jpg',
+    imagesLogo: '../../images/head@2x.png',
     name: '点击登录个人账户'
   },
 
