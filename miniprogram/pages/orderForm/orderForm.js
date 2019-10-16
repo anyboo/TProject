@@ -21,7 +21,9 @@ Page({
       name: app.globalData.orderList[last].name,
       duration: app.globalData.orderList[last].duration,
       orderNumber: app.globalData.orderList[last].orderNumber,
-      creatData: app.globalData.orderList[last].creadTime
+      creatData: app.globalData.orderList[last].creadTime,
+      startTime: app.globalData.orderList[last].startTime,
+      endTime: app.globalData.orderList[last].endTime
     })
   },
 
