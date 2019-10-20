@@ -7,7 +7,17 @@
   margin:0 auto;
   margin-top: 10px;
   box-shadow: 0px 5px 20px 0px rgba(190, 193, 205, 0.4);
-  padding-top:4px; 
+  padding-top:4px;
+}
+.locationinfo{
+  width: 95%;
+  height: 30px;
+  background:#fff;
+  border-radius: 10px;
+  margin:0 auto;
+  margin-top: 10px;
+  box-shadow: 0px 5px 20px 0px rgba(190, 193, 205, 0.4);
+  padding-top:4px;
 }
 .icon-pin-{
   margin-left: 20px;
@@ -20,9 +30,24 @@
   margin: 0 15px;
   display: inline-block;
 }
+.icon{
+  width: 20px;
+  height: 20px;
+  color: #7F8B99;
+  margin: 0 15px;
+  display: inline-block;
+}
 .font-style-address{
   font-size:16px;
   color: #808080;
+}
+.location{
+  width: 200px;
+  height: 20px;
+  font-size:12px;
+  color: #7F8B99;
+  margin: 0px;
+  display: inline-block;
 }
 .home-swiper {
   width: 95%;

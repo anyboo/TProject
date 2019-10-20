@@ -4,7 +4,7 @@
       <image class="slide-image" src="https://www.teamcs.cn/images/index.png"/>
     </swiper-item>
     <swiper-item>
-      <image class="slide-image"  src="https://www.teamcs.cn/images/IMG_0499.JPG"/>
+      <image class="slide-image"  src="https://www.teamcs.cn/images/ad.JPG"/>
     </swiper-item>
   </swiper>
   </view>
