@@ -1,6 +1,6 @@
 //app.js
 App({
-  onLaunch: function () {
+  onLaunch: function() {
     wx.cloud.init({
       env: 'test-x1dzi'
     })
@@ -15,49 +15,65 @@ App({
         // env: 'my-env-id',
         traceUser: true,
       })
-    }
-    
-    this.globalData = {
-      room:[
-        {
-          roomName: "使命感",
-          price: "108",
-          number:1
-        },
-        {
-          roomName: "价值观",
-          price: "108",
-          number:2
-        },
-        {
-          roomName: "责任心",
-          price: "108",
-          number:3
-        },
-        {
-          roomName: "凝聚力",
-          price: "108",
-          number: 4
+      wx.getSetting({
+        success(res) {
+          if (!res.authSetting['scope.userLocation']) {
+            wx.authorize({
+              scope: 'scope.userLocation',
+              success() {
+                // 用户已经同意小程序使用录音功能，后续调用 wx.startRecord 接口不会弹窗询问
+                wx.getLocation({
+                  type: 'gcj02',
+                  success(res) {
+                    this.globalData.position =
+                      `${res.latitude},${res.longitude}`
+                    console.log('位置', this.globalData.position)
+                  }
+                })
+              }
+            })
+          }
         }
-      ],
-      userInfo:null,
-      url:null,
+      })
+    }
+
+    this.globalData = {
+      room: [{
+        roomName: "使命感",
+        price: "108",
+        number: 1
+      }, {
+        roomName: "价值观",
+        price: "108",
+        number: 2
+      }, {
+        roomName: "责任心",
+        price: "108",
+        number: 3
+      }, {
+        roomName: "凝聚力",
+        price: "108",
+        number: 4
+      }],
+      userInfo: null,
+      url: null,
       orderList: [],
-      orderCardList:[],
+      orderCardList: [],
       index: null,
-      indexCard: null
+      indexCard: null,
+      position: ''
     }
   },
-  openLoading: function () {
+  openLoading: function() {
     wx.showLoading({
       title: '加载中...',
     })
   },
-  closeLoading: function(){
+  closeLoading: function() {
     wx.hideLoading();
   },
-  cleadorderNumber:function(){
-    var outTradeNo = "";  //订单号
+  cleadorderNumber: function() {
+    var outTradeNo = ""; //订单号
     for (var i = 0; i < 6; i++) //6位随机数，用以加在时间戳后面。
     {
       outTradeNo += Math.floor(Math.random() * 10);
@@ -86,11 +102,12 @@ App({
     if (type == 0) {
       currentdate = year + "/" + month + "/" + strDate + " ";
     }
-    if(type == 1){
+    if (type == 1) {
       currentdate = year + "年" + month + "月" + strDate + "日";
     }
     if (type == 2) {
-      currentdate = year + "年" + month + "月" + strDate + "日" + hh + ":" + mm
+      currentdate = year + "年" + month + "月" + strDate + "日" + hh + ":" +
+        mm
     }
     return currentdate;
   }
