@@ -17,7 +17,8 @@ Page({
     let info = app.globalData.userInfo;
     this.setData({
       imagesLogo: info.avatarUrl,
-      name: info.nickName
+      name: info.nickName,
+      sex: info.gender ? '男' : '女'
     })
   },
 

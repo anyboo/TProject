@@ -13,13 +13,26 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    wx.login({
+      success(res) {
+        if (res.code) {
+          //发起网络请求
+          console.log(res);
+          app.globalData.code = res.code
+        } else {
+          wx.showToast({
+            title: '登录失败！' + res.errMsg,
+          })
+        }
+      }
+    })
   },
 
   /**
@@ -77,9 +90,16 @@ Page({
   gotoBtnView: function () {
     app.closeLoading();
     if (app.globalData.url != null){
-      wx.redirectTo({
-        url: app.globalData.url
-      })
+      if (app.globalData.url == '../detail/detail'){
+        wx.redirectTo({
+          url: app.globalData.url
+        })
+      }
+      else{
+        wx.switchTab({
+          url: app.globalData.url
+        })
+      }
     } else {
       wx.switchTab({
         url: '../index/index'

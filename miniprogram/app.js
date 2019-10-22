@@ -21,13 +21,12 @@ App({
             wx.authorize({
               scope: 'scope.userLocation',
               success() {
-                // 用户已经同意小程序使用录音功能，后续调用 wx.startRecord 接口不会弹窗询问
                 wx.getLocation({
                   type: 'gcj02',
                   success(res) {
-                    this.globalData.position =
+                    let position =
                       `${res.latitude},${res.longitude}`
-                    console.log('位置', this.globalData.position)
+                    console.log('位置', position)
                   }
                 })
               }
@@ -61,7 +60,7 @@ App({
       orderCardList: [],
       index: null,
       indexCard: null,
-      position: ''
+      code:null
     }
   },
   openLoading: function() {

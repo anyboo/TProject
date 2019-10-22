@@ -76,6 +76,7 @@ Page({
   toMyInfo: function() {
     let info = app.globalData.userInfo;
     if (info == null) {
+      app.globalData.url = '../my/my';
       wx.redirectTo({
         url: '../login/login',
       })
@@ -88,6 +89,7 @@ Page({
   toLogin: function() {
     let info = app.globalData.userInfo;
     if (info == null) {
+      app.globalData.url = '../my/my';
       wx.redirectTo({
         url: '../login/login',
       })
@@ -96,6 +98,7 @@ Page({
   toWallet: function() {
     let info = app.globalData.userInfo;
     if (info == null) {
+      app.globalData.url = '../my/my';
       wx.redirectTo({
         url: '../login/login',
       })
@@ -108,12 +111,13 @@ Page({
   toCard: function() {
     let info = app.globalData.userInfo;
     if (info == null) {
+      app.globalData.url = '../my/my';
       wx.redirectTo({
         url: '../login/login',
       })
     } else {
       wx.navigateTo({
-        url: '../recharge/recharge',
+        url: '../buy/buy',
       })
     }
   },

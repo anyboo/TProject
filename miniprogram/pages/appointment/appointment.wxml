@@ -1,6 +1,14 @@
 <!--miniprogram/pages/appointment/appointment.wxml-->
 <view style="padding:2%">
     <text style="font-size:23px;font-weight:font-weight:bold;color:rgba(52,52,52,1);">中央第五街</text>
+    <view class="weui-cell" style="position: relative;margin: 5px;">
+      <image src="../../images/Rectangle@2x.png" style="z-index:-1;position:absolute;top:0;left:0;width:100%;height:90%"></image>
+        <image class="icon" src="../../images/location@2x.png" />
+        <!-- <view class="incise">|</view> -->
+        <text class="location"style="position:relative;top:0;left:0;width:100%;height:90%" >{{location}}</text>
+        <!-- <view class="incise">|</view> -->
+        <image class="icon" src="../../images/contact@2x.png" />
+      </view>
     <swiper class="home-swiper" indicator-dots="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
       <swiper-item>
         <image src="https://www.teamcs.cn/images/appointment-2.png" class="slide-image" />
@@ -19,14 +27,6 @@
       <!-- <view>
         <image class="locationinfo" src="../../images/Rectangle@2x.png" />
       </view> -->
-      <view class="weui-cell" style="position: relative;margin: 30px;">
-      <image src="../../images/Rectangle@2x.png" style="z-index:-1;position:absolute;top:0;left:0;width:100%;height:90%"></image>
-        <image class="icon" src="../../images/location@2x.png" />
-        <!-- <view class="incise">|</view> -->
-        <text class="location"style="position:relative;top:0;left:0;width:100%;height:90%" >{{location}}</text>
-        <!-- <view class="incise">|</view> -->
-        <image class="icon" src="../../images/contact@2x.png" />
-      </view>
     <!-- </view> -->
     <view class="weui-cell" bindtap="todetail" data-room="0">
       <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">

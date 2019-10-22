@@ -20,42 +20,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    wx.getLocation({
-      type: 'gcj02',
-      success(res) {
-        const latitude = res.latitude
-        const longitude = res.longitude
-        const speed = res.speed
-        const accuracy = res.accuracy
-        console.log('位置', latitude, longitude,
-          speed, accuracy)
-      },
-      fail(res) {
-        console.log('getLocation error')
-      }
-    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function() {
-    wx.login({
-      success(res) {
-        if (res.code) {
-          //发起网络请求
-          console.log(res);
-          // wx.request({
-          //   url: 'https://test.com/onLogin',
-          //   data: {
-          //     code: res.code
-          //   }
-          // })
-        } else {
-          console.log('登录失败！' + res.errMsg)
-        }
-      }
-    })
   },
 
   /**

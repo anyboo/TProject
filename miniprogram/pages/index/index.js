@@ -7,7 +7,7 @@ Page({
    */
   data: {
     autoplay: true,
-    interval: 3000,
+    interval: 5000,
     duration: 1200,
   },
 

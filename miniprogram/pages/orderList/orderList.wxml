@@ -87,15 +87,11 @@
     </view>
   </view>
 </view>
-<view style="width:90px;height:30px;border-radius:15px;background:#fff;font-weight:bold;position:fixed;right:5px;bottom:110px;font-weight:bold;text-align:right;padding-right:15px;line-height:30px;font-size:16px;" bindtap="toast">
-  <view style="width:40px;height:40px;border-radius:50%;background:#F7B941;position:absolute;left:-5px;top:-5px;text-align:center;line-height:40px;">
-    <text class="iconfont icon-sticker-2" style="margin:0 auto;font-size:22px;color:#fff;"></text>
-  </view>
+<view class="flex-button" style="bottom:70px" bindtap="toast">
+<view><image src="../../images/icon-3.png" class="flex-icon"></image></view>
   续单
 </view>
-<view style="width:90px;height:30px;border-radius:15px;background:#fff;font-weight:bold;position:fixed;right:5px;bottom:60px;font-weight:bold;text-align:right;padding-right:15px;line-height:30px" bindtap="toast">
-  <view style="width:40px;height:40px;border-radius:50%;background:#71ABF5;position:absolute;left:-5px;top:-5px;text-align:center;line-height:40px;">
-    <text class="iconfont icon-sticker-2" style="margin:0 auto;font-size:22px;color:#fff;"></text>
-  </view>
+<view class="flex-button" style="bottom:20px"  bindtap="toast">
+  <view><image src="../../images/icon-4.png" class="flex-icon"></image></view>
   开门码
 </view>

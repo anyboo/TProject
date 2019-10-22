@@ -129,9 +129,18 @@ Page({
     array.endTime = this.data.endTime;
     app.globalData.orderList.push(array);
     app.globalData.index = app.globalData.orderList.length - 1;
-    wx.navigateTo({
-      url: '../orderForm/orderForm',
-    })
+
+    let userInfo = app.globalData.userInfo;
+    if (userInfo == null) {
+      app.globalData.url = '../detail/detail'
+      wx.redirectTo({
+        url: '../login/login',
+      })
+    } else {
+      wx.navigateTo({
+        url: '../orderForm/orderForm',
+      })
+    }
   },
   discount: function(st, duration) {
     //23:00 - 10:00 [23-[0-20]

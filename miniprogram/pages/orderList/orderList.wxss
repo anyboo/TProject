@@ -1,1 +1,35 @@
 /* miniprogram/pages/orderList/orderList.wxss */
+.flex-icon{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  position:absolute;
+  left:-5px;
+  top:-5px;
+  text-align:center;
+  line-height:40px;
+}
+.flex-button-view{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  position:absolute;
+  left:-5px;
+  top:-5px;
+  text-align:center;
+  line-height:40px;
+}
+.flex-button{
+  width:90px;
+  height:30px;
+  border-radius:15px;
+  background:#fff;
+  position:fixed;
+  right:5px;
+  bottom:70px;
+  font-weight:bold;
+  text-align:right;
+  padding-right:15px;
+  line-height:30px;
+  font-size:16px;
+}

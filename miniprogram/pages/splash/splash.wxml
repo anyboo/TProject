@@ -1,4 +1,4 @@
 <image src="https://www.teamcs.cn/images/Artboard Background@2x.png" class="logoHeader"></image>
-<button open-type="getUserInfo" bindtap="gotoBtnView" class="getUserInfo">
+<button bindtap="gotoBtnView" class="getUserInfo">
     <text class="iconfont icon-arrow-right- icon-right"></text>
 </button>
